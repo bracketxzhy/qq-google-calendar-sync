@@ -1,0 +1,13 @@
+{
+  "_note": "Entirely synthetic. Replace source keys, fingerprints, date, applicability, and stable task identity with actual evidence.",
+  "reviewed": [{"key": "ACTUAL_SOURCE_KEY", "fingerprint": "ACTUAL_SOURCE_FINGERPRINT"}],
+  "tasks": [{
+    "id": "aaaaaaaaaaaaaaaaaaaaaaaa",
+    "status": "pending",
+    "title": "示例作业",
+    "sources": ["ACTUAL_SOURCE_KEY"],
+    "date_explicit": false,
+    "personally_required": false,
+    "event": null
+  }]
+}

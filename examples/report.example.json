@@ -1,0 +1,12 @@
+{
+  "collection_run": "ACTUAL_CURRENT_RUN_ID",
+  "status": "no_changes",
+  "new_tasks": [],
+  "updated_tasks": [],
+  "cancelled_tasks": [],
+  "pending_questions": [],
+  "calendar_results": [],
+  "email_results": [],
+  "failures": [],
+  "_note": "Replace all fields with actual current-run results. Empty arrays do not prove a step ran."
+}

@@ -1,0 +1,23 @@
+# Private installation data; do not remove these protections.
+/.private/
+/state/
+/runtime/
+/work/
+/outputs/
+/dist/
+/.codex/
+.env
+.env.*
+*.sqlite*
+*.db
+*.log
+*.pem
+*.key
+*credentials*.json
+*token*.json
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
