@@ -1,5 +1,23 @@
 # QQ → Google Calendar Sync
 
+**Python · SQLite · Provenance tracking · Human-reviewed agent workflow**
+
+A Windows integration that captures new messages from an allowlist, records their provenance in SQLite, and prepares reviewed, idempotent calendar operations.
+
+**Responsibility split:** Python handles ingestion, state, deduplication, and operation evidence. Codex performs semantic review and uses the user's connected Google Calendar tools for writes. This repository is not a standalone AI service or an independently authenticated Google Calendar client.
+
+| Component | Source |
+| --- | --- |
+| Task ledger and operation planning | [scripts/pipeline.py](scripts/pipeline.py) |
+| Message ingestion | [scripts/snowluma_source.py](scripts/snowluma_source.py) |
+| Public-release audit | [scripts/audit-public.py](scripts/audit-public.py) |
+| Operating procedure | [docs/WORKFLOW.md](docs/WORKFLOW.md) |
+| Validation and known limits | [VALIDATION.md](VALIDATION.md) |
+
+Tests use synthetic fixtures. Reliable operation depends on the Windows host, QQ, SnowLuma, Codex, and the user's connectors; continuous or lossless message delivery is not claimed.
+
+## 中文使用说明
+
 在 Windows 上持续接收指定 QQ 会话的新消息，由 Codex 定期识别个人待办，再通过 Google Calendar 连接器创建、更新和取消日程。
 
 ```text
